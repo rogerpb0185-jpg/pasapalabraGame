@@ -1,0 +1,113 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.6rem;
+    background: url(../assets/img/Catarata\ en\ el\ paraíso\ tropical.png);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.layout__main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+}
+
+.main__form{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+.form__control{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form__label{
+    position: absolute;
+    color: rgb(27, 29, 31);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container{
+    width: 25%;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 1rem;
+    padding: 6rem 4rem ;
+    background-color:rgba(255,255,255,0.1) ;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 4rem ;
+    color: rgb(27, 29, 31);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.form__input{
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0);
+    border-bottom: 1px solid #0e0d0d;
+    border-radius: 5px;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.form__input:focus{
+    box-shadow: 0px 0px 8px white;
+}
+
+.form__btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0);
+    border-bottom: 1px solid #0e0d0d;
+    border-radius: 5px;
+    margin-top: -1rem;
+}
+
+.form__btn:focus{
+    box-shadow: 0px 0px 8px white;
+}
+
+.blur{
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.focus{
+    left: 0;
+    top: -2.5rem;
+    transform: translateY(0);
+}
