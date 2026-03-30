@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+     rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="./assets/script.js" defer></script>
+
+    <title>Pasapalabra</title>
+</head>
+<body>
+  <!--Esta seccion es para el encabezado i boton de inicio de juego-->
+    <section class="pantalla-inicial" id="pantalla-inicial">
+        <h1 class="titulo-juego"> Juega y Aprende en Pasapalabra</h1>
+        <button class="primer__boton" id="primerjuego">Iniciar juego</button>
+    </section>
+    
+    <!--Esta seccion es para el juego -->
+    <section id="pantalla-juego">
+        <!--aqui se genera de forma dinamica las letras-->
+        <div class="caja__contador-tiempo">
+            <span id="tiempo-estimado">300</span>
+        </div>
+
+        <div class="contenedor-pregunta">
+            <span id="letra-pregunta">Z</span>
+            <h2 id="pregunta">Esta es la pregunta ...</h2>
+            <input  type="text" id="respuesta" placeholder="Escribe la respuesta" >
+            <div class="botones">
+                <button id="responder">Responder</button>
+                <button id="pasar">Pasa palabra</button>
+            </div>
+        </div>
+
+       
+
+    </section>
+    
+    <!--Sección pantalla final-->
+    <section id="pantalla-final">
+        <h1 class="resumen">Resumen</h1>
+        <h3 class="aciertos">Acertadas</h3>
+        <span id="acertadas" class="acertadas-span">20</span>
+        <h3 id="score">40% de aciertos</h3>
+         <div class="siguiente-inicio">
+            <a href="./index.html" class="inicio-index"><i class="fa-solid fa-backward"></i>Retroceder Al Inicio</a>
+            <a id="recomenzar">Jugar de Nuevo</a>
+        </div>
+
+    </section>
+
+    
+</body>
+</html>

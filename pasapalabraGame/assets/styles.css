@@ -1,0 +1,244 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    background: radial-gradient(circle, rgb(68, 167, 46)25%, rgb(29, 11, 11) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+}
+
+#pantalla-inicial{
+    display: block;
+    text-align: center;
+    
+    
+    max-width: 700px;
+    margin: 50px auto;
+    
+    padding: 30px;
+    color:#0f3102 ;
+    text-shadow: 2px 2px #38861c,
+                2px 2px  #62db36,
+                2px 2px #683411;
+    border-radius: 20px;
+    background: rgba(255,255,255,.1);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.primer__boton{
+    display: block;
+    text-align: center;
+    border: none;
+    background-color: #0f3102;
+    color: #adeb97;
+    padding: 10px 15px;
+    margin: 0 250px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.primer__boton:hover{
+    color: #0f3102;
+    background-color: #adeb97;
+    box-shadow: 0 0 2px #38861c, 0 0 4px  #38861c, 0 0 6px #38861c, 0 0 8px #38861c, 0 0 10px #38861c;
+}
+
+
+
+button{
+    display: inline;
+    text-align: center;
+    border: none;
+    background-color: #0f3102;
+    color: #adeb97;
+    padding: 10px 15px;
+    margin: 0 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: #0f3102;
+    background-color: #adeb97;
+    box-shadow: 0 0 2px #38861c, 0 0 4px  #38861c, 0 0 6px #38861c, 0 0 8px #38861c, 0 0 10px #38861c;
+}
+
+/*seccion pantalla del juego*/
+#pantalla-juego{
+    display: none;
+}
+
+/*Esta clase se agregara dinámicamente */
+.pregunta-actual{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/*Esta clase se agregara dinámicamente cuando haya respondido bien la pregunta */ 
+.bien-respondida{
+    background-color: #14a671 !important;
+    color: #fff !important;
+}
+
+/*Esta clase se agregara dinámicamente cuando haya respondido mal la pregunta */ 
+.mal-respondida{
+    background-color: #a63114 !important;
+    color: #fff !important;
+}
+
+.contenedor-pregunta{
+    background-color: rgba(255,255,255,.1);
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#pregunta{
+    margin: 0;
+    font-weight: bold;
+}
+
+.contenedor-pregunta input{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 60%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border: 2px solid #38861c;
+}
+
+.contenedor-pregunta #letra-pregunta{
+    border: 2px solid #62db36;
+    display: inline-block;
+    color:#000;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 30px;
+    position: relative;
+    bottom: 25px;
+    background:#adeb97 ;
+    border-radius: 60%;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: #adeb97;
+}
+
+.caja__contador-tiempo{
+    position: relative;
+    width: 255px;
+    height: 255px;
+    margin: 50px auto;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.siguiente-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.inicio-index{
+    display: inline;
+    border: none;
+    background-color: #0f3102;
+    color: #adeb97;
+    padding: 10px 15px;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    gap: 2px;
+}
+
+.inicio-index:hover, #recomenzar:hover{
+    color: #0f3102;
+    background-color: #adeb97;
+    box-shadow: 0 0 2px #38861c, 0 0 4px  #38861c, 0 0 6px #38861c, 0 0 8px #38861c, 0 0 10px #38861c;
+}
+
+#recomenzar{
+    display: inline;
+    border: none;
+    background-color: #0f3102;
+    color: #adeb97;
+    padding: 10px 15px;
+    margin: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    gap: 2px;
+}
+
+.caja__contador-tiempo #tiempo-estimado{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*La siguiente clase es para los circulos de cada letra*/
+
+.circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #38861c;
+    background: rgba(255,255,255,0.6);
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Seccion pantalla final*/
+#pantalla-final{
+    display: none;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.acertadas-span{
+    background: #0f3102;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    color: #a1d78d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
